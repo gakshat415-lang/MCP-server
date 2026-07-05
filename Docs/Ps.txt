@@ -1,0 +1,9 @@
+I want to create a MCP server for Antigravity  
+
+We need to build an MCP server for supporting our AI agent so that it can send and draft emails with GMAIL and it can append content to google doc. 
+
+Two main functionalities can be there 
+1. Sending email via Gmail 
+2. Append content to google doc 
+
+MCP server should be generic so that even other AI agents can use it. 
