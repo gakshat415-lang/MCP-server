@@ -106,6 +106,11 @@ async function main() {
     const app = express();
     const transports: Record<string, SSEServerTransport> = {};
 
+    // Health check endpoint for UptimeRobot
+    app.get("/", (req, res) => {
+      res.send("MCP Server is running!");
+    });
+
     app.get("/sse", async (req, res) => {
       const transport = new SSEServerTransport("/messages", res);
       transports[transport.sessionId] = transport;
